@@ -9,7 +9,7 @@ public class Dog {
     private int dogAge;
     private int dogWeight;
 
-    //setters for properties
+  /*  //setters for properties
     public void setDogName (String name) {
         dogName = name;
     }
@@ -18,13 +18,18 @@ public class Dog {
     }
     public void setDogWeight (int weight) {
         dogWeight = weight;
-    }
+    }*/
 
+    //constructor with this
+    public Dog(String dogName, int dogAge, int dogWeight) {
+        this.dogName = dogName;
+        this.dogAge = dogAge;
+        this.dogWeight = dogWeight;
+    }
     //getters for properties
     public String getDogName() {
         return dogName;
     }
-
     public int getDogAge() {
         return dogAge;
     }

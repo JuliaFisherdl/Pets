@@ -15,12 +15,12 @@ public class PetShop {
 
     public static void main(String[] args) {
         // create two instances of each animal type
-        Dog myDog1 = new Dog();
-        Dog myDog2 = new Dog();
-        Cat myCat1 = new Cat();
-        Cat myCat2 = new Cat();
-
-        myDog1.setDogAge(9);
+        Dog myDog1 = new Dog("Shadow", 9, 75);
+        Dog myDog2 = new Dog("Carly", 10, 70);
+        Cat myCat1 = new Cat("Artie", 10, 7);
+        Cat myCat2 = new Cat("Ella", 1, 10);
+;
+        /*myDog1.setDogAge(9);
         myDog1.setDogName("Shadow");
         myDog1.setDogWeight(75);
 
@@ -34,9 +34,9 @@ public class PetShop {
 
         myCat2.setCatAge(1);
         myCat2.setCatName("Ella");
-        myCat2.setCatWeight(10);
+        myCat2.setCatWeight(10);*/
 
-        System.out.println("Welcome to Macomb County Pet Rescue. We have the following animals available: " +
+        System.out.println("Welcome to Macomb County Humane Society Pet Rescue. We have the following animals available: " +
                 '\n' + "A cat named " + myCat1.getCatName() +
                 ". He is " + myCat1.getCatAge() + " years old" + " and weighs " + myCat1.getCatWeight() + " pounds." + '\n'
                 + "A cat named " + myCat2.getCatName() + ". She is " + myCat2.getCatAge() + " year old" + " and weighs "
