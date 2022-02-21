@@ -19,6 +19,8 @@ public class PetShop {
         Dog myDog2 = new Dog("Carly", 10, 70);
         Cat myCat1 = new Cat("Artie", 10, 7);
         Cat myCat2 = new Cat("Ella", 1, 10);
+        GuineaPig myGuineaPig1 = new GuineaPig("Oreo", 2,2);
+        GuineaPig myGuineaPig2 = new GuineaPig ("Tiny", 1,2);
 ;
         /*myDog1.setDogAge(9);
         myDog1.setDogName("Shadow");
@@ -39,11 +41,14 @@ public class PetShop {
         System.out.println("Welcome to Macomb County Humane Society Pet Rescue. We have the following animals available: " +
                 '\n' + "A cat named " + myCat1.getCatName() +
                 ". He is " + myCat1.getCatAge() + " years old" + " and weighs " + myCat1.getCatWeight() + " pounds." + '\n'
-                + "A cat named " + myCat2.getCatName() + ". She is " + myCat2.getCatAge() + " year old" + " and weighs "
+                + "A cat named " + myCat2.getCatName() + ". She is " + myCat2.getCatAge() + " years old" + " and weighs "
                 + myCat2.getCatWeight() + " pounds. " + '\n' + "A dog named " + myDog1.getDogName() + ". He is " +
-                myDog1.getDogAge() + " year old" + " and weighs " + myDog1.getDogWeight() + '\n' + "A dog named " +
+                myDog1.getDogAge() + " years old" + " and weighs " + myDog1.getDogWeight()+ " pounds."+ '\n' + "A dog named " +
                 myDog2.getDogName() + ". She is " + myDog2.getDogAge() + " years old" + " and weighs " +
-                myDog2.getDogWeight() + " pounds.");
+                myDog2.getDogWeight() + " pounds." + '\n' + "A guinea pig named " + myGuineaPig1.getGuineaPigName() +". He is " +
+                myGuineaPig1.getguineaPigAge() + " years old and weighs " + myGuineaPig1.getGuineaPigWeight() + " pounds." + '\n' +
+                "A guinea pig named " + myGuineaPig2.getGuineaPigName() + ". She is " + myGuineaPig2.getguineaPigAge() + " years old and " +
+                "weighs " + myGuineaPig2.getGuineaPigWeight() + " pounds.");
 
 
         //Bonus: create a scanner that asks which they would like
@@ -60,6 +65,7 @@ public class PetShop {
             } else {
                 System.out.println("Sorry that is not a valid option, please try again: ");
                 selection = userInput.next();
+
             }
         }
 

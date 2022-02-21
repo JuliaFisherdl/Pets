@@ -22,7 +22,7 @@ public class Cat {
     }*/
 
     //constructor
-    public Cat(String catName, int catAge, int CatWeight) {
+    public Cat(String catName, int catAge, int catWeight) {
         this.catName = catName;
         this.catAge = catAge;
         this.catWeight = catWeight;
@@ -30,14 +30,17 @@ public class Cat {
 
     //getters for properties
     public String getCatName() {
+
         return catName;
     }
 
     public int getCatAge() {
+
         return catAge;
     }
 
     public int getCatWeight() {
+
         return catWeight;
     }
 }
